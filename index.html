@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="w-[100vw] h-[100vh] bg-[#344151] flex items-center justify-center flex-col space-y-8">
+            <h2 class="text-[#0398d4] font-medium text-[20px]">Increment And Decrement</h2>
+            <div class="flex text-[25px] space-x-3 bg-white p-3 rounded-sm">
+                <!-- left button -->
+                <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+
+                <!-- text counter -->
+                <div id="counter" class="px-12 font-medium">
+                    0
+                </div>
+
+                <!-- right button -->
+                <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f3e4e9cb27.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
